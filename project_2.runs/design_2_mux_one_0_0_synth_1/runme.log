@@ -1,0 +1,334 @@
+
+*** Running vivado
+    with args -log design_2_mux_one_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_2_mux_one_0_0.tcl
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source design_2_mux_one_0_0.tcl -notrace
+Command: synth_design -top design_2_mux_one_0_0 -part xc7a35tcpg236-1 -mode out_of_context
+Starting synth_design
+WARNING: [IP_Flow 19-3571] IP 'design_2_mux_one_0_0' is restricted:
+* Module reference is stale and needs refreshing.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 20404
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1065.906 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_2_mux_one_0_0' [d:/AAM/RO_PUF_new/project_2/project_2.srcs/sources_1/bd/design_2/ip/design_2_mux_one_0_0/synth/design_2_mux_one_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'mux_one' [D:/AAM/RO_PUF_new/project_2/project_2.srcs/sources_1/new/mux_one.v:7]
+INFO: [Synth 8-6157] synthesizing module 'ring_osc' [D:/AAM/RO_PUF_new/project_2/project_2.srcs/sources_1/new/ring_osc.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'ring_osc' (1#1) [D:/AAM/RO_PUF_new/project_2/project_2.srcs/sources_1/new/ring_osc.v:2]
+INFO: [Synth 8-6157] synthesizing module 'mux_64to1' [D:/AAM/RO_PUF_new/project_2/project_2.srcs/sources_1/new/mux_64to1.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux_64to1' (2#1) [D:/AAM/RO_PUF_new/project_2/project_2.srcs/sources_1/new/mux_64to1.v:1]
+WARNING: [Synth 8-689] width (12) of port connection 's' does not match port width (6) of module 'mux_64to1' [D:/AAM/RO_PUF_new/project_2/project_2.srcs/sources_1/new/mux_one.v:22]
+INFO: [Synth 8-6157] synthesizing module 'counter_puf' [D:/AAM/RO_PUF_new/project_2/project_2.srcs/sources_1/new/counter_puf.v:3]
+	Parameter SIZE bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter_puf' (3#1) [D:/AAM/RO_PUF_new/project_2/project_2.srcs/sources_1/new/counter_puf.v:3]
+INFO: [Synth 8-6157] synthesizing module 'comparator' [D:/AAM/RO_PUF_new/project_2/project_2.srcs/sources_1/new/comparator.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'comparator' (4#1) [D:/AAM/RO_PUF_new/project_2/project_2.srcs/sources_1/new/comparator.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'mux_one' (5#1) [D:/AAM/RO_PUF_new/project_2/project_2.srcs/sources_1/new/mux_one.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'design_2_mux_one_0_0' (6#1) [d:/AAM/RO_PUF_new/project_2/project_2.srcs/sources_1/bd/design_2/ip/design_2_mux_one_0_0/synth/design_2_mux_one_0_0.v:58]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1065.906 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1065.906 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1065.906 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1065.906 ; gain = 0.000
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1065.906 ; gain = 0.000
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1065.906 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 1065.906 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 1065.906 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 1065.906 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1065.906 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1065.906 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1065.906 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1065.906 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    19|
+|2     |LUT1   |  1794|
+|3     |LUT2   |   128|
+|4     |LUT4   |    16|
+|5     |LUT6   |    34|
+|6     |MUXF7  |    16|
+|7     |MUXF8  |     8|
+|8     |FDCE   |    64|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------------+---------------+------+
+|      |Instance             |Module         |Cells |
++------+---------------------+---------------+------+
+|1     |top                  |               |  2079|
+|2     |  inst               |mux_one        |  2079|
+|3     |    mux_1            |mux_64to1__1   |    29|
+|4     |    mux_2            |mux_64to1      |    29|
+|5     |    cou_1            |counter_puf__1 |    41|
+|6     |    cou_2            |counter_puf    |    41|
+|7     |    comp1            |comparator     |    19|
+|8     |    \ro_array_1[63]  |ring_osc__1    |    15|
+|9     |    \ro_array_1[62]  |ring_osc__2    |    15|
+|10    |    \ro_array_1[61]  |ring_osc__3    |    15|
+|11    |    \ro_array_1[60]  |ring_osc__4    |    15|
+|12    |    \ro_array_1[59]  |ring_osc__5    |    15|
+|13    |    \ro_array_1[58]  |ring_osc__6    |    15|
+|14    |    \ro_array_1[57]  |ring_osc__7    |    15|
+|15    |    \ro_array_1[56]  |ring_osc__8    |    15|
+|16    |    \ro_array_1[55]  |ring_osc__9    |    15|
+|17    |    \ro_array_1[54]  |ring_osc__10   |    15|
+|18    |    \ro_array_1[53]  |ring_osc__11   |    15|
+|19    |    \ro_array_1[52]  |ring_osc__12   |    15|
+|20    |    \ro_array_1[51]  |ring_osc__13   |    15|
+|21    |    \ro_array_1[50]  |ring_osc__14   |    15|
+|22    |    \ro_array_1[49]  |ring_osc__15   |    15|
+|23    |    \ro_array_1[48]  |ring_osc__16   |    15|
+|24    |    \ro_array_1[47]  |ring_osc__17   |    15|
+|25    |    \ro_array_1[46]  |ring_osc__18   |    15|
+|26    |    \ro_array_1[45]  |ring_osc__19   |    15|
+|27    |    \ro_array_1[44]  |ring_osc__20   |    15|
+|28    |    \ro_array_1[43]  |ring_osc__21   |    15|
+|29    |    \ro_array_1[42]  |ring_osc__22   |    15|
+|30    |    \ro_array_1[41]  |ring_osc__23   |    15|
+|31    |    \ro_array_1[40]  |ring_osc__24   |    15|
+|32    |    \ro_array_1[39]  |ring_osc__25   |    15|
+|33    |    \ro_array_1[38]  |ring_osc__26   |    15|
+|34    |    \ro_array_1[37]  |ring_osc__27   |    15|
+|35    |    \ro_array_1[36]  |ring_osc__28   |    15|
+|36    |    \ro_array_1[35]  |ring_osc__29   |    15|
+|37    |    \ro_array_1[34]  |ring_osc__30   |    15|
+|38    |    \ro_array_1[33]  |ring_osc__31   |    15|
+|39    |    \ro_array_1[32]  |ring_osc__32   |    15|
+|40    |    \ro_array_1[31]  |ring_osc__33   |    15|
+|41    |    \ro_array_1[30]  |ring_osc__34   |    15|
+|42    |    \ro_array_1[29]  |ring_osc__35   |    15|
+|43    |    \ro_array_1[28]  |ring_osc__36   |    15|
+|44    |    \ro_array_1[27]  |ring_osc__37   |    15|
+|45    |    \ro_array_1[26]  |ring_osc__38   |    15|
+|46    |    \ro_array_1[25]  |ring_osc__39   |    15|
+|47    |    \ro_array_1[24]  |ring_osc__40   |    15|
+|48    |    \ro_array_1[23]  |ring_osc__41   |    15|
+|49    |    \ro_array_1[22]  |ring_osc__42   |    15|
+|50    |    \ro_array_1[21]  |ring_osc__43   |    15|
+|51    |    \ro_array_1[20]  |ring_osc__44   |    15|
+|52    |    \ro_array_1[19]  |ring_osc__45   |    15|
+|53    |    \ro_array_1[18]  |ring_osc__46   |    15|
+|54    |    \ro_array_1[17]  |ring_osc__47   |    15|
+|55    |    \ro_array_1[16]  |ring_osc__48   |    15|
+|56    |    \ro_array_1[15]  |ring_osc__49   |    15|
+|57    |    \ro_array_1[14]  |ring_osc__50   |    15|
+|58    |    \ro_array_1[13]  |ring_osc__51   |    15|
+|59    |    \ro_array_1[12]  |ring_osc__52   |    15|
+|60    |    \ro_array_1[11]  |ring_osc__53   |    15|
+|61    |    \ro_array_1[10]  |ring_osc__54   |    15|
+|62    |    \ro_array_1[9]   |ring_osc__55   |    15|
+|63    |    \ro_array_1[8]   |ring_osc__56   |    15|
+|64    |    \ro_array_1[7]   |ring_osc__57   |    15|
+|65    |    \ro_array_1[6]   |ring_osc__58   |    15|
+|66    |    \ro_array_1[5]   |ring_osc__59   |    15|
+|67    |    \ro_array_1[4]   |ring_osc__60   |    15|
+|68    |    \ro_array_1[3]   |ring_osc__61   |    15|
+|69    |    \ro_array_1[2]   |ring_osc__62   |    15|
+|70    |    \ro_array_1[1]   |ring_osc__63   |    15|
+|71    |    \ro_array_1[0]   |ring_osc__64   |    15|
+|72    |    \ro_array_2[63]  |ring_osc__65   |    15|
+|73    |    \ro_array_2[62]  |ring_osc__66   |    15|
+|74    |    \ro_array_2[61]  |ring_osc__67   |    15|
+|75    |    \ro_array_2[60]  |ring_osc__68   |    15|
+|76    |    \ro_array_2[59]  |ring_osc__69   |    15|
+|77    |    \ro_array_2[58]  |ring_osc__70   |    15|
+|78    |    \ro_array_2[57]  |ring_osc__71   |    15|
+|79    |    \ro_array_2[56]  |ring_osc__72   |    15|
+|80    |    \ro_array_2[55]  |ring_osc__73   |    15|
+|81    |    \ro_array_2[54]  |ring_osc__74   |    15|
+|82    |    \ro_array_2[53]  |ring_osc__75   |    15|
+|83    |    \ro_array_2[52]  |ring_osc__76   |    15|
+|84    |    \ro_array_2[51]  |ring_osc__77   |    15|
+|85    |    \ro_array_2[50]  |ring_osc__78   |    15|
+|86    |    \ro_array_2[49]  |ring_osc__79   |    15|
+|87    |    \ro_array_2[48]  |ring_osc__80   |    15|
+|88    |    \ro_array_2[47]  |ring_osc__81   |    15|
+|89    |    \ro_array_2[46]  |ring_osc__82   |    15|
+|90    |    \ro_array_2[45]  |ring_osc__83   |    15|
+|91    |    \ro_array_2[44]  |ring_osc__84   |    15|
+|92    |    \ro_array_2[43]  |ring_osc__85   |    15|
+|93    |    \ro_array_2[42]  |ring_osc__86   |    15|
+|94    |    \ro_array_2[41]  |ring_osc__87   |    15|
+|95    |    \ro_array_2[40]  |ring_osc__88   |    15|
+|96    |    \ro_array_2[39]  |ring_osc__89   |    15|
+|97    |    \ro_array_2[38]  |ring_osc__90   |    15|
+|98    |    \ro_array_2[37]  |ring_osc__91   |    15|
+|99    |    \ro_array_2[36]  |ring_osc__92   |    15|
+|100   |    \ro_array_2[35]  |ring_osc__93   |    15|
+|101   |    \ro_array_2[34]  |ring_osc__94   |    15|
+|102   |    \ro_array_2[33]  |ring_osc__95   |    15|
+|103   |    \ro_array_2[32]  |ring_osc__96   |    15|
+|104   |    \ro_array_2[31]  |ring_osc__97   |    15|
+|105   |    \ro_array_2[30]  |ring_osc__98   |    15|
+|106   |    \ro_array_2[29]  |ring_osc__99   |    15|
+|107   |    \ro_array_2[28]  |ring_osc__100  |    15|
+|108   |    \ro_array_2[27]  |ring_osc__101  |    15|
+|109   |    \ro_array_2[26]  |ring_osc__102  |    15|
+|110   |    \ro_array_2[25]  |ring_osc__103  |    15|
+|111   |    \ro_array_2[24]  |ring_osc__104  |    15|
+|112   |    \ro_array_2[23]  |ring_osc__105  |    15|
+|113   |    \ro_array_2[22]  |ring_osc__106  |    15|
+|114   |    \ro_array_2[21]  |ring_osc__107  |    15|
+|115   |    \ro_array_2[20]  |ring_osc__108  |    15|
+|116   |    \ro_array_2[19]  |ring_osc__109  |    15|
+|117   |    \ro_array_2[18]  |ring_osc__110  |    15|
+|118   |    \ro_array_2[17]  |ring_osc__111  |    15|
+|119   |    \ro_array_2[16]  |ring_osc__112  |    15|
+|120   |    \ro_array_2[15]  |ring_osc__113  |    15|
+|121   |    \ro_array_2[14]  |ring_osc__114  |    15|
+|122   |    \ro_array_2[13]  |ring_osc__115  |    15|
+|123   |    \ro_array_2[12]  |ring_osc__116  |    15|
+|124   |    \ro_array_2[11]  |ring_osc__117  |    15|
+|125   |    \ro_array_2[10]  |ring_osc__118  |    15|
+|126   |    \ro_array_2[9]   |ring_osc__119  |    15|
+|127   |    \ro_array_2[8]   |ring_osc__120  |    15|
+|128   |    \ro_array_2[7]   |ring_osc__121  |    15|
+|129   |    \ro_array_2[6]   |ring_osc__122  |    15|
+|130   |    \ro_array_2[5]   |ring_osc__123  |    15|
+|131   |    \ro_array_2[4]   |ring_osc__124  |    15|
+|132   |    \ro_array_2[3]   |ring_osc__125  |    15|
+|133   |    \ro_array_2[2]   |ring_osc__126  |    15|
+|134   |    \ro_array_2[1]   |ring_osc__127  |    15|
+|135   |    \ro_array_2[0]   |ring_osc       |    15|
++------+---------------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1065.906 ; gain = 0.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1065.906 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1065.906 ; gain = 0.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1065.906 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 43 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1065.906 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+24 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:48 . Memory (MB): peak = 1065.906 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Common 17-1381] The checkpoint 'D:/AAM/RO_PUF_new/project_2/project_2.runs/design_2_mux_one_0_0_synth_1/design_2_mux_one_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1482.484 ; gain = 416.578
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1174] Renamed 134 cell refs.
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/AAM/RO_PUF_new/project_2/project_2.runs/design_2_mux_one_0_0_synth_1/design_2_mux_one_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_2_mux_one_0_0_utilization_synth.rpt -pb design_2_mux_one_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 19 17:07:18 2024...
